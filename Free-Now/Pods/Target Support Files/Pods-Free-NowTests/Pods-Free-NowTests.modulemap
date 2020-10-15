@@ -1,0 +1,6 @@
+framework module Pods_Free_NowTests {
+  umbrella header "Pods-Free-NowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

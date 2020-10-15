@@ -1,0 +1,6 @@
+framework module Pods_Free_Now {
+  umbrella header "Pods-Free-Now-umbrella.h"
+
+  export *
+  module * { export * }
+}
