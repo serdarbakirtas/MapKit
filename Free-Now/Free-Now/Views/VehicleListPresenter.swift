@@ -48,8 +48,8 @@ class VehicleListPresenter<T: VehicleListView>: BasePresenter<T> {
     }
     
     // MARK: API CALLS
-    func loadVehicle(page: Int) {
-        shareApiInstance.getVehicleList(page: page, pageSize: FreeNowAPIRepo.UNLIMITED_PAGE_SIZE)
+    func loadVehicle(page: Int, searchString: String) {
+        shareApiInstance.getVehicleList(page: page, searchString: searchString)
         .applySchedulers()
         .showFullScreenActivityIndicator(view: view)
         .subscribe(onSuccess: { [unowned self] vehicle in

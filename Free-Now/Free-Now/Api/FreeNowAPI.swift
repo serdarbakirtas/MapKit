@@ -10,5 +10,5 @@ import RxSwift
 
 protocol FreeNowAPI {
     
-    func getVehicleList(page: Int, pageSize: Int) -> Single<Vehicle>
+    func getVehicleList(page: Int, searchString: String) -> Single<Vehicle>
 }

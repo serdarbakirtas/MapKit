@@ -59,7 +59,7 @@ extension VehicleListViewController: PaginatedTableDisplayer {
     }
     
     func loadItems(page: Int, section: Int, searchString: String) {
-        presenter.loadVehicle(page: page)
+        presenter.loadVehicle(page: page, searchString: searchString)
     }
     
     var tableView: UITableView {
