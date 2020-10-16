@@ -7,10 +7,12 @@
 
 import UIKit
 
-protocol VehicleListView: BaseView, PaginatedTableDisplayer {}
+protocol VehicleListView: BaseView, PaginatedTableDisplayer, SearchableTableDisplayer {}
 
 class VehicleListViewController: BaseViewController {
     
+    let searchBarTable = TableSearchBar()
+    var searchDelegateHandler: TableSearchBarDelegateHandler!
     var presenter: VehicleListPresenter<VehicleListViewController>!
     
     @IBOutlet weak var tableVehicle: UITableView!
@@ -33,6 +35,22 @@ class VehicleListViewController: BaseViewController {
 }
 
 extension VehicleListViewController: VehicleListView {}
+
+extension VehicleListViewController: SearchableTableDisplayer {
+    
+    var searchBar: UISearchBar {
+        searchBarTable
+    }
+    
+    var searchBarDelegateHandler: TableSearchBarDelegateHandler {
+        searchDelegateHandler
+    }
+    
+    func addSearchBarToTable() {
+        searchBarTable.inject(to: view, with: tableView)
+        searchDelegateHandler = TableSearchBarDelegateHandler(searchableTable: self)
+    }
+}
 
 extension VehicleListViewController: PaginatedTableDisplayer {
     
