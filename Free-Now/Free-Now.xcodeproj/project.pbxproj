@@ -21,6 +21,7 @@
 		9F11136A253A00EA00858CDB /* TableSearchBarDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111369253A00EA00858CDB /* TableSearchBarDelegateHandler.swift */; };
 		9F11136F253A010300858CDB /* TableDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11136E253A010300858CDB /* TableDescription.swift */; };
 		9F111382253A083800858CDB /* TableSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111381253A083800858CDB /* TableSearchBar.swift */; };
+		9F11138D253A0BF000858CDB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F11138C253A0BF000858CDB /* MapKit.framework */; };
 		9FF2D6322538F51700714B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6312538F51700714B59 /* AppDelegate.swift */; };
 		9FF2D6362538F51700714B59 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6352538F51700714B59 /* MainTabController.swift */; };
 		9FF2D6392538F51700714B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D6372538F51700714B59 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		9F111369253A00EA00858CDB /* TableSearchBarDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSearchBarDelegateHandler.swift; sourceTree = "<group>"; };
 		9F11136E253A010300858CDB /* TableDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDescription.swift; sourceTree = "<group>"; };
 		9F111381253A083800858CDB /* TableSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSearchBar.swift; sourceTree = "<group>"; };
+		9F11138C253A0BF000858CDB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9FF2D62E2538F51700714B59 /* Free-Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free-Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF2D6312538F51700714B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF2D6352538F51700714B59 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F11138D253A0BF000858CDB /* MapKit.framework in Frameworks */,
 				0221DF230D8B92317D9BDF5A /* Pods_Free_Now.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +142,7 @@
 		92B6F97082BB5B4F980BF036 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F11138C253A0BF000858CDB /* MapKit.framework */,
 				571BA5D0A83F2FE56E33BFD9 /* Pods_Free_Now.framework */,
 				74DA660BC3EF34237A7C5C64 /* Pods_Free_NowTests.framework */,
 			);
@@ -156,6 +160,37 @@
 				9F111369253A00EA00858CDB /* TableSearchBarDelegateHandler.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9F111386253A0A6900858CDB /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2D6372538F51700714B59 /* Main.storyboard */,
+				9FF2D6352538F51700714B59 /* MainTabController.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		9F111387253A0A7A00858CDB /* VehicleList */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2D6732538F73B00714B59 /* VehicleList.storyboard */,
+				9FF2D6A42538FA8600714B59 /* VehicleListViewController.swift */,
+				9FF2D6A92538FA9F00714B59 /* VehicleListPresenter.swift */,
+				9F111343253915E100858CDB /* VehicleListCell.xib */,
+				9F11134B2539162300858CDB /* VehicleListCell.swift */,
+			);
+			path = VehicleList;
+			sourceTree = "<group>";
+		};
+		9F111388253A0A9A00858CDB /* VehicleMap */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */,
+				9FF2D6AE2538FAB400714B59 /* VehicleMapController.swift */,
+				9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */,
+			);
+			path = VehicleMap;
 			sourceTree = "<group>";
 		};
 		9FF2D6252538F51700714B59 = {
@@ -219,16 +254,9 @@
 		9FF2D66D2538F6A700714B59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9FF2D6372538F51700714B59 /* Main.storyboard */,
-				9FF2D6352538F51700714B59 /* MainTabController.swift */,
-				9FF2D6732538F73B00714B59 /* VehicleList.storyboard */,
-				9F111343253915E100858CDB /* VehicleListCell.xib */,
-				9F11134B2539162300858CDB /* VehicleListCell.swift */,
-				9FF2D6A42538FA8600714B59 /* VehicleListViewController.swift */,
-				9FF2D6A92538FA9F00714B59 /* VehicleListPresenter.swift */,
-				9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */,
-				9FF2D6AE2538FAB400714B59 /* VehicleMapController.swift */,
-				9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */,
+				9F111387253A0A7A00858CDB /* VehicleList */,
+				9F111388253A0A9A00858CDB /* VehicleMap */,
+				9F111386253A0A6900858CDB /* MainTab */,
 			);
 			path = Views;
 			sourceTree = "<group>";

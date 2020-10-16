@@ -19,7 +19,6 @@ class FreeNowAPIRepo: FreeNowAPI {
     static let DEFAULT_PAGE_SIZE = 20
     static let UNLIMITED_PAGE_SIZE = 10000
     
-    
     private func getAuthenticatedHeader() -> HTTPHeaders {
         let headers: HTTPHeaders = [
             "Authorization": "Token",
@@ -57,7 +56,8 @@ class FreeNowAPIRepo: FreeNowAPI {
             return Disposables.create { request.cancel() }
         }
     }
-    
+
+    // TODO: There is also pagination property, we can use it for paging system.
     func getVehicleList(page: Int = 1, searchString: String) -> Single<Vehicle> {
         // TODO: We can use the searchString to search for vehicles. Just The Api should be updated
         // let parameters: Parameters = ["page": page, "pagesize": pageSize]
