@@ -4,29 +4,68 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Vehicle-->
         <scene sceneID="sUa-UY-eGd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lsT-uV-eNt" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lsT-uV-eNt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Vehicle" image="list.number" catalog="system" selectedImage="list.number" id="UNu-z5-0ND"/>
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yXh-QK-qbR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6CJ-ep-lNL" kind="relationship" relationship="rootViewController" id="hH2-lW-35I"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RxX-a2-Xmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="167"/>
+            <point key="canvasLocation" x="-362" y="172"/>
+        </scene>
+        <!--Vehicle List View Controller-->
+        <scene sceneID="7dD-SK-HKN">
+            <objects>
+                <viewController id="6CJ-ep-lNL" customClass="VehicleListViewController" customModule="Free_Now" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSv-sA-GTR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="64s-et-RlK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nfd-Xl-lnd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nfd-Xl-lnd" firstAttribute="bottom" secondItem="64s-et-RlK" secondAttribute="bottom" id="4Hp-mh-Yft"/>
+                            <constraint firstItem="64s-et-RlK" firstAttribute="top" secondItem="nfd-Xl-lnd" secondAttribute="top" id="E7x-13-Y9m"/>
+                            <constraint firstItem="nfd-Xl-lnd" firstAttribute="trailing" secondItem="64s-et-RlK" secondAttribute="trailing" id="XHK-Bj-BN0"/>
+                            <constraint firstItem="64s-et-RlK" firstAttribute="leading" secondItem="nfd-Xl-lnd" secondAttribute="leading" id="uZR-02-WLS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kie-az-Iyv"/>
+                    <connections>
+                        <outlet property="tableVehicle" destination="64s-et-RlK" id="dis-lH-8He"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJ6-OI-RZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448" y="171"/>
         </scene>
     </scenes>
     <resources>
         <image name="list.number" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

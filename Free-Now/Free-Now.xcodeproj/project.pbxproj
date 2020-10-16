@@ -3,12 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00D4349E763E0D49D789FA53 /* Pods_Free_NowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DA660BC3EF34237A7C5C64 /* Pods_Free_NowTests.framework */; };
 		0221DF230D8B92317D9BDF5A /* Pods_Free_Now.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BA5D0A83F2FE56E33BFD9 /* Pods_Free_Now.framework */; };
+		9F111315253906D200858CDB /* BasePresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111314253906D200858CDB /* BasePresenterView.swift */; };
+		9F11131A25390F2000858CDB /* RxObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11131925390F2000858CDB /* RxObservableExtension.swift */; };
+		9F111344253915E100858CDB /* VehicleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F111343253915E100858CDB /* VehicleListCell.xib */; };
+		9F11134C2539162300858CDB /* VehicleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11134B2539162300858CDB /* VehicleListCell.swift */; };
+		9F1113512539164300858CDB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1113502539164300858CDB /* CustomTableViewCell.swift */; };
+		9F11135D253A00C100858CDB /* PaginatedTableDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11135B253A00C100858CDB /* PaginatedTableDisplayer.swift */; };
+		9F11135E253A00C100858CDB /* PaginatedTableProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11135C253A00C100858CDB /* PaginatedTableProperties.swift */; };
+		9F111364253A00D300858CDB /* SearchableTableDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111362253A00D300858CDB /* SearchableTableDisplayer.swift */; };
+		9F111365253A00D300858CDB /* StandardTableDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111363253A00D300858CDB /* StandardTableDisplayer.swift */; };
+		9F11136A253A00EA00858CDB /* TableSearchBarDelegateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111369253A00EA00858CDB /* TableSearchBarDelegateHandler.swift */; };
+		9F11136F253A010300858CDB /* TableDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11136E253A010300858CDB /* TableDescription.swift */; };
 		9FF2D6322538F51700714B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6312538F51700714B59 /* AppDelegate.swift */; };
 		9FF2D6362538F51700714B59 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6352538F51700714B59 /* MainTabController.swift */; };
 		9FF2D6392538F51700714B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D6372538F51700714B59 /* Main.storyboard */; };
@@ -24,6 +35,12 @@
 		9FF2D6B42538FAC500714B59 /* VehicleMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */; };
 		9FF2D6B92538FB1C00714B59 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6B82538FB1C00714B59 /* Vehicle.swift */; };
 		9FF2D6BE2538FB5C00714B59 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6BD2538FB5C00714B59 /* VehicleListViewModel.swift */; };
+		9FF2D6CE2538FEB400714B59 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6CD2538FEB400714B59 /* BaseViewController.swift */; };
+		9FF2D6D62538FFD500714B59 /* BaseViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6D52538FFD400714B59 /* BaseViewPresenter.swift */; };
+		9FF2D6DF253902D900714B59 /* FreeNowAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6DE253902D900714B59 /* FreeNowAPI.swift */; };
+		9FF2D6E72539034B00714B59 /* FreeNowAPIRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6E62539034B00714B59 /* FreeNowAPIRepo.swift */; };
+		9FF2D6ED2539043900714B59 /* AFErrorConvertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6EC2539043900714B59 /* AFErrorConvertExtension.swift */; };
+		9FF2D6F52539046F00714B59 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6F42539046F00714B59 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +66,17 @@
 		786C8C2D1C598BB6CC244F36 /* Pods-Free-NowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free-NowTests.debug.xcconfig"; path = "Target Support Files/Pods-Free-NowTests/Pods-Free-NowTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81459B52FAE4DF13C25AF03D /* Pods-Free-Now.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free-Now.debug.xcconfig"; path = "Target Support Files/Pods-Free-Now/Pods-Free-Now.debug.xcconfig"; sourceTree = "<group>"; };
 		9A220875EBADF1E7C582706B /* Pods-Free-Now.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free-Now.release.xcconfig"; path = "Target Support Files/Pods-Free-Now/Pods-Free-Now.release.xcconfig"; sourceTree = "<group>"; };
+		9F111314253906D200858CDB /* BasePresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterView.swift; sourceTree = "<group>"; };
+		9F11131925390F2000858CDB /* RxObservableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxObservableExtension.swift; sourceTree = "<group>"; };
+		9F111343253915E100858CDB /* VehicleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleListCell.xib; sourceTree = "<group>"; };
+		9F11134B2539162300858CDB /* VehicleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListCell.swift; sourceTree = "<group>"; };
+		9F1113502539164300858CDB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		9F11135B253A00C100858CDB /* PaginatedTableDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedTableDisplayer.swift; sourceTree = "<group>"; };
+		9F11135C253A00C100858CDB /* PaginatedTableProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedTableProperties.swift; sourceTree = "<group>"; };
+		9F111362253A00D300858CDB /* SearchableTableDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableTableDisplayer.swift; sourceTree = "<group>"; };
+		9F111363253A00D300858CDB /* StandardTableDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTableDisplayer.swift; sourceTree = "<group>"; };
+		9F111369253A00EA00858CDB /* TableSearchBarDelegateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSearchBarDelegateHandler.swift; sourceTree = "<group>"; };
+		9F11136E253A010300858CDB /* TableDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDescription.swift; sourceTree = "<group>"; };
 		9FF2D62E2538F51700714B59 /* Free-Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free-Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF2D6312538F51700714B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF2D6352538F51700714B59 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -70,6 +98,12 @@
 		9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapPresenter.swift; sourceTree = "<group>"; };
 		9FF2D6B82538FB1C00714B59 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		9FF2D6BD2538FB5C00714B59 /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		9FF2D6CD2538FEB400714B59 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9FF2D6D52538FFD400714B59 /* BaseViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewPresenter.swift; sourceTree = "<group>"; };
+		9FF2D6DE253902D900714B59 /* FreeNowAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowAPI.swift; sourceTree = "<group>"; };
+		9FF2D6E62539034B00714B59 /* FreeNowAPIRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowAPIRepo.swift; sourceTree = "<group>"; };
+		9FF2D6EC2539043900714B59 /* AFErrorConvertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFErrorConvertExtension.swift; sourceTree = "<group>"; };
+		9FF2D6F42539046F00714B59 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E50C6721032710AD62A7783C /* Pods-Free-NowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free-NowTests.release.xcconfig"; path = "Target Support Files/Pods-Free-NowTests/Pods-Free-NowTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +143,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F11131E2539118A00858CDB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F11135B253A00C100858CDB /* PaginatedTableDisplayer.swift */,
+				9F11135C253A00C100858CDB /* PaginatedTableProperties.swift */,
+				9F111362253A00D300858CDB /* SearchableTableDisplayer.swift */,
+				9F111363253A00D300858CDB /* StandardTableDisplayer.swift */,
+				9F11136E253A010300858CDB /* TableDescription.swift */,
+				9F111369253A00EA00858CDB /* TableSearchBarDelegateHandler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		9FF2D6252538F51700714B59 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +181,10 @@
 		9FF2D6302538F51700714B59 /* Free-Now */ = {
 			isa = PBXGroup;
 			children = (
+				9F11131E2539118A00858CDB /* Protocols */,
+				9FF2D6EB2539042E00714B59 /* Extensions */,
+				9FF2D6DD253902C700714B59 /* Api */,
+				9FF2D6CC2538FEA700714B59 /* Base */,
 				9FF2D66F2538F6C100714B59 /* Models */,
 				9FF2D66E2538F6B100714B59 /* ViewModels */,
 				9FF2D66D2538F6A700714B59 /* Views */,
@@ -169,6 +220,8 @@
 				9FF2D6372538F51700714B59 /* Main.storyboard */,
 				9FF2D6352538F51700714B59 /* MainTabController.swift */,
 				9FF2D6732538F73B00714B59 /* VehicleList.storyboard */,
+				9F111343253915E100858CDB /* VehicleListCell.xib */,
+				9F11134B2539162300858CDB /* VehicleListCell.swift */,
 				9FF2D6A42538FA8600714B59 /* VehicleListViewController.swift */,
 				9FF2D6A92538FA9F00714B59 /* VehicleListPresenter.swift */,
 				9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */,
@@ -189,9 +242,39 @@
 		9FF2D66F2538F6C100714B59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2D6F42539046F00714B59 /* APIError.swift */,
 				9FF2D6B82538FB1C00714B59 /* Vehicle.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9FF2D6CC2538FEA700714B59 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2D6CD2538FEB400714B59 /* BaseViewController.swift */,
+				9FF2D6D52538FFD400714B59 /* BaseViewPresenter.swift */,
+				9F111314253906D200858CDB /* BasePresenterView.swift */,
+				9F1113502539164300858CDB /* CustomTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FF2D6DD253902C700714B59 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2D6DE253902D900714B59 /* FreeNowAPI.swift */,
+				9FF2D6E62539034B00714B59 /* FreeNowAPIRepo.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		9FF2D6EB2539042E00714B59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2D6EC2539043900714B59 /* AFErrorConvertExtension.swift */,
+				9F11131925390F2000858CDB /* RxObservableExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CC259C742F12604449FE2BB7 /* Pods */ = {
@@ -202,7 +285,6 @@
 				786C8C2D1C598BB6CC244F36 /* Pods-Free-NowTests.debug.xcconfig */,
 				E50C6721032710AD62A7783C /* Pods-Free-NowTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -317,6 +399,7 @@
 				9FF2D6742538F73B00714B59 /* VehicleList.storyboard in Resources */,
 				9FF2D69D2538F89D00714B59 /* VehicleMap.storyboard in Resources */,
 				9FF2D63B2538F51700714B59 /* Assets.xcassets in Resources */,
+				9F111344253915E100858CDB /* VehicleListCell.xib in Resources */,
 				9FF2D6392538F51700714B59 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,12 +508,28 @@
 			files = (
 				9FF2D6A52538FA8600714B59 /* VehicleListViewController.swift in Sources */,
 				9FF2D6AA2538FA9F00714B59 /* VehicleListPresenter.swift in Sources */,
+				9F11131A25390F2000858CDB /* RxObservableExtension.swift in Sources */,
+				9F111364253A00D300858CDB /* SearchableTableDisplayer.swift in Sources */,
 				9FF2D6362538F51700714B59 /* MainTabController.swift in Sources */,
+				9F111365253A00D300858CDB /* StandardTableDisplayer.swift in Sources */,
 				9FF2D6322538F51700714B59 /* AppDelegate.swift in Sources */,
+				9FF2D6D62538FFD500714B59 /* BaseViewPresenter.swift in Sources */,
+				9F11134C2539162300858CDB /* VehicleListCell.swift in Sources */,
+				9FF2D6E72539034B00714B59 /* FreeNowAPIRepo.swift in Sources */,
 				9FF2D6B92538FB1C00714B59 /* Vehicle.swift in Sources */,
+				9FF2D6CE2538FEB400714B59 /* BaseViewController.swift in Sources */,
 				9FF2D6BE2538FB5C00714B59 /* VehicleListViewModel.swift in Sources */,
+				9F11136F253A010300858CDB /* TableDescription.swift in Sources */,
 				9FF2D6B42538FAC500714B59 /* VehicleMapPresenter.swift in Sources */,
+				9FF2D6DF253902D900714B59 /* FreeNowAPI.swift in Sources */,
 				9FF2D6AF2538FAB400714B59 /* VehicleMapController.swift in Sources */,
+				9F1113512539164300858CDB /* CustomTableViewCell.swift in Sources */,
+				9FF2D6ED2539043900714B59 /* AFErrorConvertExtension.swift in Sources */,
+				9F11136A253A00EA00858CDB /* TableSearchBarDelegateHandler.swift in Sources */,
+				9FF2D6F52539046F00714B59 /* APIError.swift in Sources */,
+				9F11135D253A00C100858CDB /* PaginatedTableDisplayer.swift in Sources */,
+				9F111315253906D200858CDB /* BasePresenterView.swift in Sources */,
+				9F11135E253A00C100858CDB /* PaginatedTableProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
