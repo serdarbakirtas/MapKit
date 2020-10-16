@@ -64,4 +64,9 @@ class FreeNowAPIRepo: FreeNowAPI {
         let hamburgLocation = "p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
         return createSingleRequest(url: FreeNowAPIRepo.BASE_URL + hamburgLocation, method: .get)
     }
+    
+    func getVehicleListWithLocation(p2latitude: Double, p1longitude: Double, p1latitude: Double, p2longitude: Double) -> Single<Vehicle> {
+        let boundsLocation = "p2Lat=" + "\(p2latitude)" + "&p1Lon=" + "\(p1longitude)" + "&p1Lat=" + "\(p1latitude)" + "&p2Lon=" + "\(p2longitude)"
+        return createSingleRequest(url: FreeNowAPIRepo.BASE_URL + boundsLocation, method: .get)
+    }
 }

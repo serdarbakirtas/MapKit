@@ -52,5 +52,9 @@
 	<string>This app using mapkit</string>
 	<key>NSLocationUsageDescription</key>
 	<string>This app using mapkit</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app using mapkit</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app using mapkit</string>
 </dict>
 </plist>
