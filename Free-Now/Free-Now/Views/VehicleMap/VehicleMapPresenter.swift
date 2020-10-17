@@ -17,8 +17,8 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     var items: [PoiList] = []
     var annotations = [MKAnnotation]()
     
-    override init(view: T, shareApiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
-        super.init(view: view, shareApiInstance: shareApiInstance)
+    override init(view: T, apiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
+        super.init(view: view, apiInstance: apiInstance)
     }
     
     // MARK: FUNCTIONS
@@ -30,8 +30,8 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     
     func coordinateRegion() {
         // Hamburg location is used as inital
-        let oahuCenter = CLLocation(latitude: 53.394655, longitude: 10.099891)
-        let coordinateRegion = MKCoordinateRegion(center: oahuCenter.coordinate,
+        let locationCenter = CLLocation(latitude: 53.394655, longitude: 10.099891)
+        let coordinateRegion = MKCoordinateRegion(center: locationCenter.coordinate,
                                                   latitudinalMeters: regionRadius,
                                                   longitudinalMeters: regionRadius)
         view?.setCoordinateRegion(coordinateRegion: coordinateRegion)
@@ -70,7 +70,7 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     
     // MARK: API CALLS
     func loadVehicle(p2latitude: Double, p1longitude: Double, p1latitude: Double, p2longitude: Double) {
-        shareApiInstance.getVehicleListWithLocation(p2latitude: p2latitude, p1longitude: p1longitude,
+        apiInstance.getVehicleListWithLocation(p2latitude: p2latitude, p1longitude: p1longitude,
                                                     p1latitude: p1latitude, p2longitude: p2longitude)
         .applySchedulers()
         .showFullScreenActivityIndicator(view: view)

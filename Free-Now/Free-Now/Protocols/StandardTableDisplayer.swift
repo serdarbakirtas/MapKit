@@ -93,8 +93,7 @@ extension StandardTableDisplayer {
         let isEmptyTable = (getAllPresentedItemsCount() == 0)
         if isEmptyTable, tableView.numberOfSections == 1 {
             let labelEmpty = "noDataFound"
-//            tableView.backgroundView = EmptyTableIndicatorView(frame: tableView.bounds, message: labelEmpty)
-            // needed for chat view (reversed table)
+            tableView.backgroundView = EmptyTableIndicatorView(frame: tableView.bounds, message: labelEmpty)
             tableView.backgroundView?.transform = tableView.transform
         } else {
             tableView.backgroundView = nil

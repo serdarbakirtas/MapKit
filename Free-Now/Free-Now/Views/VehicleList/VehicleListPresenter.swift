@@ -14,9 +14,10 @@ class VehicleListPresenter<T: VehicleListView>: BasePresenter<T> {
     let disposeBag = DisposeBag()
     let tableProperties = PaginatedTableProperties()
     var items: [PoiList] = []
+    var disposable: Disposable?
     
-    override init(view: T, shareApiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
-        super.init(view: view, shareApiInstance: shareApiInstance)
+    override init(view: T, apiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
+        super.init(view: view, apiInstance: apiInstance)
     }
     
     // MARK: FUNCTIONS
@@ -44,20 +45,27 @@ class VehicleListPresenter<T: VehicleListView>: BasePresenter<T> {
                 self.items.append(item)
             }
         }
-        self.view?.reloadPaginatedTable()
     }
+    
+    private func removeAllVehicles() {
+        items.removeAll()
+    }
+    
     
     // MARK: API CALLS
     func loadVehicle(page: Int, searchString: String) {
-        shareApiInstance.getVehicleList(page: page, searchString: searchString)
-        .applySchedulers()
-        .showFullScreenActivityIndicator(view: view)
-        .subscribe(onSuccess: { [unowned self] vehicle in
-                    self.onVehiclesLoaded(vehicle: vehicle)},
-                   onError: { [unowned self] error in
-                    self.interpretError(title: "exampleLoadingError", error: error)
-                    
-        })
-        .disposed(by: disposeBag)
+        if disposable != nil {
+            disposable?.dispose()
+        }
+        disposable = apiInstance.getVehicleList(page: page, searchString: searchString)
+            .applySchedulers()
+            .showFullScreenActivityIndicator(view: view)
+            .doOnFirstPageSuccess(page: page, removeAllVehicles)
+            .do(onDispose: { [weak self] in self?.view?.reloadPaginatedTable() })
+            .subscribe(onSuccess: {[unowned self] vehicle in
+                        self.onVehiclesLoaded(vehicle: vehicle)},
+                       onError: {[unowned self] error in
+                        self.interpretError(title: "exampleLoadingError", error: error)})
+        disposable?.disposed(by: disposeBag)
     }
 }

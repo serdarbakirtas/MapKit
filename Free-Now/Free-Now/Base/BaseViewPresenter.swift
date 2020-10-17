@@ -9,7 +9,7 @@ import Foundation
 
 class BaseViewPresenter<T: BaseView>: BasePresenter<T> {
     
-    override init(view: T, shareApiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
-        super.init(view: view, shareApiInstance: shareApiInstance)
+    override init(view: T, apiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
+        super.init(view: view, apiInstance: apiInstance)
     }
 }

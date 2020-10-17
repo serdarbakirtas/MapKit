@@ -14,11 +14,11 @@ protocol BasePresenterView: class {
 class BasePresenter<T: BasePresenterView> {
     
     weak var view: T?
-    var shareApiInstance: FreeNowAPI
+    var apiInstance: FreeNowAPI
     
-    init(view: T, shareApiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
+    init(view: T, apiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
         self.view = view
-        self.shareApiInstance = shareApiInstance
+        self.apiInstance = apiInstance
     }
     
     func interpretError(title: String?, error: Error, actions: [UIAlertAction]? = nil) {

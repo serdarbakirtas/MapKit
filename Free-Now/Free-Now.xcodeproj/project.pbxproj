@@ -23,14 +23,28 @@
 		9F111382253A083800858CDB /* TableSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F111381253A083800858CDB /* TableSearchBar.swift */; };
 		9F11138D253A0BF000858CDB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F11138C253A0BF000858CDB /* MapKit.framework */; };
 		9F92F720253B2E2D00B16985 /* MKCoordinateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F71F253B2E2D00B16985 /* MKCoordinateExtension.swift */; };
+		9FCFBA39253B923F00E55EBB /* EmptyTableIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCFBA38253B923F00E55EBB /* EmptyTableIndicatorView.swift */; };
+		9FCFBA41253B928C00E55EBB /* EmptyTableIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCFBA40253B928C00E55EBB /* EmptyTableIndicatorView.xib */; };
 		9FDCA8F4253A42F200007CD6 /* VehiclePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCA8F3253A42F200007CD6 /* VehiclePin.swift */; };
 		9FDCA8F9253A44AF00007CD6 /* MKCenterLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCA8F8253A44AF00007CD6 /* MKCenterLocationExtension.swift */; };
+		9FEB1998253B538000F6208E /* VehicleListPresenterUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1997253B538000F6208E /* VehicleListPresenterUnitTest.swift */; };
+		9FEB19A1253B554F00F6208E /* VehicleListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB19A0253B554F00F6208E /* VehicleListViewMock.swift */; };
+		9FEB19A9253B559F00F6208E /* BaseViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB19A8253B559F00F6208E /* BaseViewMock.swift */; };
+		9FEB19AE253B56FA00F6208E /* FreeNowAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB19AD253B56FA00F6208E /* FreeNowAPIMock.swift */; };
+		9FEB1A0A253B5CC600F6208E /* PaginatedTableDisplayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A09253B5CC600F6208E /* PaginatedTableDisplayerMock.swift */; };
+		9FEB1A12253B5D3700F6208E /* SearchableTableDisplayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A11253B5D3700F6208E /* SearchableTableDisplayerMock.swift */; };
+		9FEB1A1D253B686200F6208E /* VehicleMapPresenterUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A1C253B686200F6208E /* VehicleMapPresenterUnitTest.swift */; };
+		9FEB1A22253B68B600F6208E /* VehicleMapViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A21253B68B600F6208E /* VehicleMapViewMock.swift */; };
+		9FEB1A27253B707F00F6208E /* BaseViewPresenterUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A26253B707F00F6208E /* BaseViewPresenterUnitTest.swift */; };
+		9FEB1A30253B717300F6208E /* TableSearchBarDelegateUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A2F253B717300F6208E /* TableSearchBarDelegateUnitTest.swift */; };
+		9FEB1A38253B71A400F6208E /* PaginatedSearchableTableViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A37253B71A400F6208E /* PaginatedSearchableTableViewMock.swift */; };
+		9FEB1A3D253B8A7B00F6208E /* ViewModelsUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A3C253B8A7B00F6208E /* ViewModelsUnitTest.swift */; };
+		9FEB1A5E253B8EDD00F6208E /* PaginatedTablePropertiesUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB1A5D253B8EDD00F6208E /* PaginatedTablePropertiesUnitTest.swift */; };
 		9FF2D6322538F51700714B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6312538F51700714B59 /* AppDelegate.swift */; };
 		9FF2D6362538F51700714B59 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6352538F51700714B59 /* MainTabController.swift */; };
 		9FF2D6392538F51700714B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D6372538F51700714B59 /* Main.storyboard */; };
 		9FF2D63B2538F51700714B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D63A2538F51700714B59 /* Assets.xcassets */; };
 		9FF2D63E2538F51700714B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D63C2538F51700714B59 /* LaunchScreen.storyboard */; };
-		9FF2D6492538F51700714B59 /* Free_NowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6482538F51700714B59 /* Free_NowTests.swift */; };
 		9FF2D6542538F51700714B59 /* Free_NowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6532538F51700714B59 /* Free_NowUITests.swift */; };
 		9FF2D6742538F73B00714B59 /* VehicleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D6732538F73B00714B59 /* VehicleList.storyboard */; };
 		9FF2D69D2538F89D00714B59 /* VehicleMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */; };
@@ -85,8 +99,23 @@
 		9F111381253A083800858CDB /* TableSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSearchBar.swift; sourceTree = "<group>"; };
 		9F11138C253A0BF000858CDB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F92F71F253B2E2D00B16985 /* MKCoordinateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateExtension.swift; sourceTree = "<group>"; };
+		9FCFBA38253B923F00E55EBB /* EmptyTableIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableIndicatorView.swift; sourceTree = "<group>"; };
+		9FCFBA40253B928C00E55EBB /* EmptyTableIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableIndicatorView.xib; sourceTree = "<group>"; };
 		9FDCA8F3253A42F200007CD6 /* VehiclePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePin.swift; sourceTree = "<group>"; };
 		9FDCA8F8253A44AF00007CD6 /* MKCenterLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCenterLocationExtension.swift; sourceTree = "<group>"; };
+		9FEB1997253B538000F6208E /* VehicleListPresenterUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListPresenterUnitTest.swift; sourceTree = "<group>"; };
+		9FEB19A0253B554F00F6208E /* VehicleListViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewMock.swift; sourceTree = "<group>"; };
+		9FEB19A8253B559F00F6208E /* BaseViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewMock.swift; sourceTree = "<group>"; };
+		9FEB19AD253B56FA00F6208E /* FreeNowAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowAPIMock.swift; sourceTree = "<group>"; };
+		9FEB1A09253B5CC600F6208E /* PaginatedTableDisplayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedTableDisplayerMock.swift; sourceTree = "<group>"; };
+		9FEB1A11253B5D3700F6208E /* SearchableTableDisplayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableTableDisplayerMock.swift; sourceTree = "<group>"; };
+		9FEB1A1C253B686200F6208E /* VehicleMapPresenterUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapPresenterUnitTest.swift; sourceTree = "<group>"; };
+		9FEB1A21253B68B600F6208E /* VehicleMapViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewMock.swift; sourceTree = "<group>"; };
+		9FEB1A26253B707F00F6208E /* BaseViewPresenterUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewPresenterUnitTest.swift; sourceTree = "<group>"; };
+		9FEB1A2F253B717300F6208E /* TableSearchBarDelegateUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSearchBarDelegateUnitTest.swift; sourceTree = "<group>"; };
+		9FEB1A37253B71A400F6208E /* PaginatedSearchableTableViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedSearchableTableViewMock.swift; sourceTree = "<group>"; };
+		9FEB1A3C253B8A7B00F6208E /* ViewModelsUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsUnitTest.swift; sourceTree = "<group>"; };
+		9FEB1A5D253B8EDD00F6208E /* PaginatedTablePropertiesUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedTablePropertiesUnitTest.swift; sourceTree = "<group>"; };
 		9FF2D62E2538F51700714B59 /* Free-Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free-Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF2D6312538F51700714B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF2D6352538F51700714B59 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -95,7 +124,6 @@
 		9FF2D63D2538F51700714B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF2D63F2538F51700714B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FF2D6442538F51700714B59 /* Free-NowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Free-NowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF2D6482538F51700714B59 /* Free_NowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_NowTests.swift; sourceTree = "<group>"; };
 		9FF2D64A2538F51700714B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FF2D64F2538F51700714B59 /* Free-NowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Free-NowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF2D6532538F51700714B59 /* Free_NowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_NowUITests.swift; sourceTree = "<group>"; };
@@ -199,6 +227,49 @@
 			path = VehicleMap;
 			sourceTree = "<group>";
 		};
+		9FEB1996253B535E00F6208E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB1A26253B707F00F6208E /* BaseViewPresenterUnitTest.swift */,
+				9FEB19A0253B554F00F6208E /* VehicleListViewMock.swift */,
+				9FEB1997253B538000F6208E /* VehicleListPresenterUnitTest.swift */,
+				9FEB1A21253B68B600F6208E /* VehicleMapViewMock.swift */,
+				9FEB1A1C253B686200F6208E /* VehicleMapPresenterUnitTest.swift */,
+				9FEB1A3C253B8A7B00F6208E /* ViewModelsUnitTest.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FEB199F253B54FE00F6208E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB19A8253B559F00F6208E /* BaseViewMock.swift */,
+				9FEB19AD253B56FA00F6208E /* FreeNowAPIMock.swift */,
+				9FEB1A09253B5CC600F6208E /* PaginatedTableDisplayerMock.swift */,
+				9FEB1A11253B5D3700F6208E /* SearchableTableDisplayerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9FEB1A2E253B716200F6208E /* Tabledisplayer */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB1A2F253B717300F6208E /* TableSearchBarDelegateUnitTest.swift */,
+				9FEB1A37253B71A400F6208E /* PaginatedSearchableTableViewMock.swift */,
+				9FEB1A5D253B8EDD00F6208E /* PaginatedTablePropertiesUnitTest.swift */,
+			);
+			path = Tabledisplayer;
+			sourceTree = "<group>";
+		};
+		9FEB1A70253B91C400F6208E /* Emptytableindicator */ = {
+			isa = PBXGroup;
+			children = (
+				9FCFBA40253B928C00E55EBB /* EmptyTableIndicatorView.xib */,
+				9FCFBA38253B923F00E55EBB /* EmptyTableIndicatorView.swift */,
+			);
+			path = Emptytableindicator;
+			sourceTree = "<group>";
+		};
 		9FF2D6252538F51700714B59 = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +313,9 @@
 		9FF2D6472538F51700714B59 /* Free-NowTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FF2D6482538F51700714B59 /* Free_NowTests.swift */,
+				9FEB1A2E253B716200F6208E /* Tabledisplayer */,
+				9FEB199F253B54FE00F6208E /* Mocks */,
+				9FEB1996253B535E00F6208E /* Views */,
 				9FF2D64A2538F51700714B59 /* Info.plist */,
 			);
 			path = "Free-NowTests";
@@ -260,6 +333,7 @@
 		9FF2D66D2538F6A700714B59 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9FEB1A70253B91C400F6208E /* Emptytableindicator */,
 				9F111387253A0A7A00858CDB /* VehicleList */,
 				9F111388253A0A9A00858CDB /* VehicleMap */,
 				9F111386253A0A6900858CDB /* MainTab */,
@@ -435,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCFBA41253B928C00E55EBB /* EmptyTableIndicatorView.xib in Resources */,
 				9FF2D63E2538F51700714B59 /* LaunchScreen.storyboard in Resources */,
 				9FF2D6742538F73B00714B59 /* VehicleList.storyboard in Resources */,
 				9FF2D69D2538F89D00714B59 /* VehicleMap.storyboard in Resources */,
@@ -547,6 +622,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FDCA8F9253A44AF00007CD6 /* MKCenterLocationExtension.swift in Sources */,
+				9FCFBA39253B923F00E55EBB /* EmptyTableIndicatorView.swift in Sources */,
 				9FF2D6A52538FA8600714B59 /* VehicleListViewController.swift in Sources */,
 				9FF2D6AA2538FA9F00714B59 /* VehicleListPresenter.swift in Sources */,
 				9F11131A25390F2000858CDB /* RxObservableExtension.swift in Sources */,
@@ -581,7 +657,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF2D6492538F51700714B59 /* Free_NowTests.swift in Sources */,
+				9FEB1A0A253B5CC600F6208E /* PaginatedTableDisplayerMock.swift in Sources */,
+				9FEB1A5E253B8EDD00F6208E /* PaginatedTablePropertiesUnitTest.swift in Sources */,
+				9FEB19A9253B559F00F6208E /* BaseViewMock.swift in Sources */,
+				9FEB19A1253B554F00F6208E /* VehicleListViewMock.swift in Sources */,
+				9FEB1A27253B707F00F6208E /* BaseViewPresenterUnitTest.swift in Sources */,
+				9FEB1A12253B5D3700F6208E /* SearchableTableDisplayerMock.swift in Sources */,
+				9FEB1A38253B71A400F6208E /* PaginatedSearchableTableViewMock.swift in Sources */,
+				9FEB1A1D253B686200F6208E /* VehicleMapPresenterUnitTest.swift in Sources */,
+				9FEB1998253B538000F6208E /* VehicleListPresenterUnitTest.swift in Sources */,
+				9FEB1A22253B68B600F6208E /* VehicleMapViewMock.swift in Sources */,
+				9FEB19AE253B56FA00F6208E /* FreeNowAPIMock.swift in Sources */,
+				9FEB1A3D253B8A7B00F6208E /* ViewModelsUnitTest.swift in Sources */,
+				9FEB1A30253B717300F6208E /* TableSearchBarDelegateUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

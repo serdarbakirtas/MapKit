@@ -48,6 +48,20 @@ extension PaginatedTableDisplayer where Self: SearchableTableDisplayer {
         reloadPaginatedTable(searchString: searchBar.text ?? "")
     }
     
+    func reloadPaginatedTable(searchString: String) {
+        endRefreshing()
+        reloadStandardTable()
+        removeActivityIndicatorFromFooter()
+        // Since tableView.reloadData makes main thread occupied, by running setLoading inside main thread,
+        // we make sure that it is run after reloadData is finished.
+        DispatchQueue.main.async {
+            self.tableProperties.setAllSectionsLoading(numberOfSections: self.tableView.numberOfSections,
+                                                       isLoading: false)
+            self.tableProperties.setRefreshing(isRefreshing: false)
+            self.onTableFinishedReloading(searchString: searchString)
+        }
+    }
+    
     func reloadPaginatedTable(section: Int) {
         reloadPaginatedTable(section: section, searchString: searchBar.text ?? "")
     }
@@ -64,9 +78,7 @@ extension PaginatedTableDisplayer where Self: SearchableTableDisplayer {
     }
     
     private func setSearchBarPlaceHolderText() {
-        let content = tableDescription.table
-        let placeholder = "searchPlaceholder"
-        
+        let placeholder = "Search"
         searchBar.placeholder = placeholder
     }
 }
