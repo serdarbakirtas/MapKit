@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="-80" y="167"/>
         </scene>
-        <!--Vehicle Map Controller-->
+        <!--Vehicle Map View Controller-->
         <scene sceneID="Tq6-b7-9ev">
             <objects>
-                <viewController id="PAZ-zh-dYR" customClass="VehicleMapController" customModule="Free_Now" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PAZ-zh-dYR" customClass="VehicleMapViewController" customModule="Free_Now" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GeW-iT-qbp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

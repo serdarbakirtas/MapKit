@@ -16,9 +16,9 @@ protocol VehicleMapView: BaseView {
     func removeAnnotations()
 }
 
-class VehicleMapController: BaseViewController {
+class VehicleMapViewController: BaseViewController {
     
-    var presenter: VehicleMapPresenter<VehicleMapController>!
+    var presenter: VehicleMapPresenter<VehicleMapViewController>!
     
     @IBOutlet var mapView: MKMapView!
     
@@ -35,7 +35,7 @@ class VehicleMapController: BaseViewController {
     }
 }
 
-extension VehicleMapController: VehicleMapView {
+extension VehicleMapViewController: VehicleMapView {
     
     func initialLocation(initialLocation: CLLocation) {
         mapView.centerToLocation(initialLocation)
@@ -56,7 +56,7 @@ extension VehicleMapController: VehicleMapView {
     }
 }
 
-extension VehicleMapController: MKMapViewDelegate {
+extension VehicleMapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let point1Coordinate = mapView.topLeftCoordinate()

@@ -50,7 +50,7 @@
 		9FF2D69D2538F89D00714B59 /* VehicleMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */; };
 		9FF2D6A52538FA8600714B59 /* VehicleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6A42538FA8600714B59 /* VehicleListViewController.swift */; };
 		9FF2D6AA2538FA9F00714B59 /* VehicleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6A92538FA9F00714B59 /* VehicleListPresenter.swift */; };
-		9FF2D6AF2538FAB400714B59 /* VehicleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6AE2538FAB400714B59 /* VehicleMapController.swift */; };
+		9FF2D6AF2538FAB400714B59 /* VehicleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6AE2538FAB400714B59 /* VehicleMapViewController.swift */; };
 		9FF2D6B42538FAC500714B59 /* VehicleMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */; };
 		9FF2D6B92538FB1C00714B59 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6B82538FB1C00714B59 /* Vehicle.swift */; };
 		9FF2D6BE2538FB5C00714B59 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2D6BD2538FB5C00714B59 /* VehicleListViewModel.swift */; };
@@ -132,7 +132,7 @@
 		9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VehicleMap.storyboard; sourceTree = "<group>"; };
 		9FF2D6A42538FA8600714B59 /* VehicleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewController.swift; sourceTree = "<group>"; };
 		9FF2D6A92538FA9F00714B59 /* VehicleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListPresenter.swift; sourceTree = "<group>"; };
-		9FF2D6AE2538FAB400714B59 /* VehicleMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapController.swift; sourceTree = "<group>"; };
+		9FF2D6AE2538FAB400714B59 /* VehicleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewController.swift; sourceTree = "<group>"; };
 		9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapPresenter.swift; sourceTree = "<group>"; };
 		9FF2D6B82538FB1C00714B59 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		9FF2D6BD2538FB5C00714B59 /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF2D69C2538F89D00714B59 /* VehicleMap.storyboard */,
-				9FF2D6AE2538FAB400714B59 /* VehicleMapController.swift */,
+				9FF2D6AE2538FAB400714B59 /* VehicleMapViewController.swift */,
 				9FF2D6B32538FAC500714B59 /* VehicleMapPresenter.swift */,
 			);
 			path = VehicleMap;
@@ -642,7 +642,7 @@
 				9FF2D6B42538FAC500714B59 /* VehicleMapPresenter.swift in Sources */,
 				9FDCA8F4253A42F200007CD6 /* VehiclePin.swift in Sources */,
 				9FF2D6DF253902D900714B59 /* FreeNowAPI.swift in Sources */,
-				9FF2D6AF2538FAB400714B59 /* VehicleMapController.swift in Sources */,
+				9FF2D6AF2538FAB400714B59 /* VehicleMapViewController.swift in Sources */,
 				9F1113512539164300858CDB /* CustomTableViewCell.swift in Sources */,
 				9FF2D6ED2539043900714B59 /* AFErrorConvertExtension.swift in Sources */,
 				9F11136A253A00EA00858CDB /* TableSearchBarDelegateHandler.swift in Sources */,
