@@ -29,15 +29,6 @@ struct PoiList: Decodable {
     var state: StateType
     var type: VehicleType
     var heading: Double?
-    
-//    init() {
-//        id = 0
-//        coordinate = nil
-//        state = .ACTIVE
-//        type = .TAXI
-//        heading = nil
-//    }
-    
 }
 
 struct Coordinate: Codable {

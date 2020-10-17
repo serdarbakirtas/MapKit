@@ -30,8 +30,6 @@ class VehicleMapViewController: BaseViewController {
         presenter = VehicleMapPresenter(view: self)
         presenter.initialLocation()
         presenter.coordinateRegion()
-        presenter.loadVehicle(p2latitude: 53.394655, p1longitude: 9.757589,
-                              p1latitude: 53.694865, p2longitude: 10.099891)
     }
 }
 

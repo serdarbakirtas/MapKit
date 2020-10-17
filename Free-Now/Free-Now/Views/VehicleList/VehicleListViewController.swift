@@ -36,6 +36,11 @@ class VehicleListViewController: BaseViewController {
 
 extension VehicleListViewController: VehicleListView {}
 
+// TODO: There is no paging or search provider in the API.
+// The search and paging functionality is not working, it is just architecture for this challenge
+// The search and paging functionality will work automatically if parameters are provided
+// The functionalities can implement for all table list.
+// If you don't want to search bar, just remove the searchBarTable and delegates
 extension VehicleListViewController: SearchableTableDisplayer {
     
     var searchBar: UISearchBar {

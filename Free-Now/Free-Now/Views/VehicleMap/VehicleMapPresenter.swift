@@ -71,7 +71,7 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     // MARK: API CALLS
     func loadVehicle(p2latitude: Double, p1longitude: Double, p1latitude: Double, p2longitude: Double) {
         apiInstance.getVehicleListWithLocation(p2latitude: p2latitude, p1longitude: p1longitude,
-                                                    p1latitude: p1latitude, p2longitude: p2longitude)
+                                               p1latitude: p1latitude, p2longitude: p2longitude)
         .applySchedulers()
         .showFullScreenActivityIndicator(view: view)
         .subscribe(onSuccess: { [unowned self] vehicle in
