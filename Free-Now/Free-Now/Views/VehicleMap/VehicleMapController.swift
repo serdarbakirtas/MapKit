@@ -69,7 +69,15 @@ extension VehicleMapController: MKMapViewDelegate {
         presenter.removeAnnotations()
     }
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        print("")
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let annotationView = mapView.dequeueReusableAnnotationView(
+            withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier,
+            for: annotation)
+        annotationView.clusteringIdentifier = "identifier"
+        annotationView.canShowCallout = true
+        let button = UIButton(frame: CGRect(origin: .zero, size: .init(width: 30, height: 30)))
+        button.setImage(#imageLiteral(resourceName: "Annotations/Car"), for: .normal)
+        annotationView.rightCalloutAccessoryView = button
+        return annotationView
     }
 }

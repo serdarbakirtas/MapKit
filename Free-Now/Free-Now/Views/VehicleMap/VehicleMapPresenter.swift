@@ -52,13 +52,11 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     }
     
     private func addAnnotations() {
-        let vehicleLocations = self.items
-        
-        for student in vehicleLocations {
-            let pin = VehiclePin(id: student.id,
+        for vehicleItem in items {
+            let pin = VehiclePin(title: vehicleItem.state.rawValue, id: vehicleItem.id,
                                  coordinate: CLLocationCoordinate2D.init(
-                                    latitude: student.coordinate?.latitude ?? 0,
-                                    longitude: student.coordinate?.longitude ?? 0))
+                                    latitude: vehicleItem.coordinate?.latitude ?? 0,
+                                    longitude: vehicleItem.coordinate?.longitude ?? 0))
             annotations.append(pin)
         }
         view?.addAnnotations(annotation: annotations)
