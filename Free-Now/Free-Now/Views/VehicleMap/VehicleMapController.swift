@@ -13,15 +13,12 @@ protocol VehicleMapView: BaseView {
     func setCoordinateRegion(coordinateRegion: MKCoordinateRegion)
     func initialLocation(initialLocation: CLLocation)
     func addAnnotations(annotation: [MKAnnotation])
+    func removeAnnotations()
 }
 
 class VehicleMapController: BaseViewController {
     
     var presenter: VehicleMapPresenter<VehicleMapController>!
-    var point1Latitude: Double?
-    var point2Latitude: Double?
-    var point1lLongitude: Double?
-    var point2Longitude: Double?
     
     @IBOutlet var mapView: MKMapView!
     
@@ -36,12 +33,6 @@ class VehicleMapController: BaseViewController {
         presenter.loadVehicle(p2latitude: 53.394655, p1longitude: 9.757589,
                               p1latitude: 53.694865, p2longitude: 10.099891)
     }
-    
-    func removeData() {
-        DispatchQueue.main.async {
-            self.mapView.removeAnnotations(self.mapView.annotations)
-        }
-    }
 }
 
 extension VehicleMapController: VehicleMapView {
@@ -55,24 +46,27 @@ extension VehicleMapController: VehicleMapView {
     }
     
     func addAnnotations(annotation: [MKAnnotation]) {
-        mapView.addAnnotations(annotation)
+        self.mapView.addAnnotations(annotation)
+    }
+    
+    func removeAnnotations() {
+        DispatchQueue.main.async {
+            self.mapView.removeAnnotations(self.mapView.annotations)
+        }
     }
 }
 
 extension VehicleMapController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        point2Latitude = mapView.centerCoordinate.latitude
-        point2Longitude = mapView.centerCoordinate.longitude
-        
-        presenter.loadVehicle(p2latitude: point2Latitude ?? 53.394655, p1longitude: point1lLongitude ?? 9.757589,
-                              p1latitude: point1Latitude ?? 53.694865, p2longitude: point2Longitude ?? 10.099891)
+        let point1Coordinate = mapView.topLeftCoordinate()
+        let point2Coordinate = mapView.bottomRightCoordinate()
+        presenter.loadVehicle(p2latitude: point2Coordinate.latitude, p1longitude: point1Coordinate.longitude,
+                              p1latitude: point1Coordinate.latitude, p2longitude: point2Coordinate.longitude)
     }
     
     func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
-        point1Latitude = mapView.centerCoordinate.latitude
-        point1lLongitude = mapView.centerCoordinate.longitude
-        removeData()
+        presenter.removeAnnotations()
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {

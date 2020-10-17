@@ -36,8 +36,15 @@ struct Coordinate: Codable {
     
     var latitude: Double
     var longitude: Double
+}
+
+extension Coordinate {
     
-    func locationCoordinate() -> CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    init(coordinate: CLLocationCoordinate2D) {
+        self.init(latitude: coordinate.latitude, longitude: coordinate.longitude)
+    }
+    
+    func locationCoordinate2D() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }

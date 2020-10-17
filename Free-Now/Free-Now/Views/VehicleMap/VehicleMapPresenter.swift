@@ -15,6 +15,7 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     let disposeBag = DisposeBag()
     let regionRadius: CLLocationDistance = 50000
     var items: [PoiList] = []
+    var annotations = [MKAnnotation]()
     
     override init(view: T, shareApiInstance: FreeNowAPI = FreeNowAPIRepo.sharedInstance) {
         super.init(view: view, shareApiInstance: shareApiInstance)
@@ -51,7 +52,6 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
     }
     
     private func addAnnotations() {
-        var annotations = [MKAnnotation]()
         let vehicleLocations = self.items
         
         for student in vehicleLocations {
@@ -62,7 +62,13 @@ class VehicleMapPresenter<T: VehicleMapView>: BasePresenter<T> {
             annotations.append(pin)
         }
         view?.addAnnotations(annotation: annotations)
-      }
+    }
+    
+    func removeAnnotations() {
+        annotations.removeAll()
+        items.removeAll()
+        view?.removeAnnotations()
+    }
     
     // MARK: API CALLS
     func loadVehicle(p2latitude: Double, p1longitude: Double, p1latitude: Double, p2longitude: Double) {
