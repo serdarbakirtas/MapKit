@@ -12,6 +12,7 @@ enum StateType: String, Decodable {
     case PASSIVE = "PASSIVE"
 }
 
+// TODO: I could not see the other strings, will update it.
 enum VehicleType: String, Decodable {
     case TAXI = "TAXI"
     case BUS = "BUS"

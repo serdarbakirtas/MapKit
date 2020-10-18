@@ -11,5 +11,6 @@ import RxSwift
 protocol FreeNowAPI {
     
     func getVehicleList(page: Int, searchString: String) -> Single<Vehicle>
-    func getVehicleListWithLocation(p2latitude: Double, p1longitude: Double, p1latitude: Double, p2longitude: Double) -> Single<Vehicle>
+    func getVehicleListWithLocation(p2latitude: Double, p1longitude: Double,
+                                    p1latitude: Double, p2longitude: Double) -> Single<Vehicle>
 }

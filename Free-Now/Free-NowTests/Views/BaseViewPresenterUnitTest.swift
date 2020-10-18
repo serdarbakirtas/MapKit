@@ -17,8 +17,7 @@ class BaseViewPresenterUnitTest: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        presenter = BaseViewPresenter(view: viewMock,
-                                      apiInstance: shareAPIMock)
+        presenter = BaseViewPresenter(view: viewMock, apiInstance: shareAPIMock)
     }
     
     override func tearDown() {

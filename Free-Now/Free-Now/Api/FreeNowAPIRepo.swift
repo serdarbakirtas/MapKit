@@ -29,8 +29,9 @@ class FreeNowAPIRepo: FreeNowAPI {
         return headers
     }
     
-    private func createSingleRequest<T: Decodable>(url: String, method: HTTPMethod, parameters: Parameters? = nil,
-                                                  headers: HTTPHeaders? = nil) -> Single<T> {
+    private func createSingleRequest<T: Decodable>(url: String, method: HTTPMethod,
+                                                   parameters: Parameters? = nil,
+                                                   headers: HTTPHeaders? = nil) -> Single<T> {
         let reqHeaders = headers ?? getAuthenticatedHeader()
         let encoding: ParameterEncoding = (method == .post || method == .put || method == .patch)
             ? JSONEncoding.default : URLEncoding.default
@@ -65,8 +66,10 @@ class FreeNowAPIRepo: FreeNowAPI {
         return createSingleRequest(url: FreeNowAPIRepo.BASE_URL + hamburgLocation, method: .get)
     }
     
-    func getVehicleListWithLocation(p2latitude: Double, p1longitude: Double, p1latitude: Double, p2longitude: Double) -> Single<Vehicle> {
-        let boundsLocation = "p2Lat=" + "\(p2latitude)" + "&p1Lon=" + "\(p1longitude)" + "&p1Lat=" + "\(p1latitude)" + "&p2Lon=" + "\(p2longitude)"
+    func getVehicleListWithLocation(p2latitude: Double, p1longitude: Double,
+                                    p1latitude: Double, p2longitude: Double) -> Single<Vehicle> {
+        let boundsLocation = "p2Lat=" + "\(p2latitude)" + "&p1Lon=" + "\(p1longitude)" +
+            "&p1Lat=" + "\(p1latitude)" + "&p2Lon=" + "\(p2longitude)"
         return createSingleRequest(url: FreeNowAPIRepo.BASE_URL + boundsLocation, method: .get)
     }
 }

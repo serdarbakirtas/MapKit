@@ -103,7 +103,7 @@ extension VehicleListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VehicleListCell", for: indexPath)
-            as? VehicleListCell else {
+                as? VehicleListCell else {
                 return UITableViewCell()
         }
         

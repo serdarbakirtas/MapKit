@@ -28,8 +28,6 @@ class VehicleMapViewMock: BaseViewMock, VehicleMapView {
     var regionLatitude: Double = 0.0
     var regionLongitude: Double = 0.0
     
-    
-    
     func setCoordinateRegion(coordinateRegion: MKCoordinateRegion) {
         regionLatitude = coordinateRegion.center.latitude
         regionLongitude = coordinateRegion.center.longitude

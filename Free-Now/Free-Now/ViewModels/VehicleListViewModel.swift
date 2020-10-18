@@ -40,6 +40,7 @@ struct VehicleListViewModel {
         return items.coordinate?.longitude ?? 0
     }
     
+    //TODO: Will use the color from library
     func getStateColor(items: PoiList) -> UIColor {
         if items.state == .ACTIVE {
             return .green
