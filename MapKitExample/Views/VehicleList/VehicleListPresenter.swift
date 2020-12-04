@@ -41,10 +41,6 @@ class VehicleListPresenter<T: VehicleListView>: BasePresenter<T> {
         }
     }
     
-    private func removeAllVehicles() {
-        items.removeAll()
-    }
-    
     // MARK: API CALLS
     func loadVehicle() {
         if disposable != nil {

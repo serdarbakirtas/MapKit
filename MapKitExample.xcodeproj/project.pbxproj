@@ -12,7 +12,6 @@
 		9F11131A25390F2000858CDB /* RxObservableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11131925390F2000858CDB /* RxObservableExtension.swift */; };
 		9F111344253915E100858CDB /* VehicleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F111343253915E100858CDB /* VehicleListCell.xib */; };
 		9F11134C2539162300858CDB /* VehicleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F11134B2539162300858CDB /* VehicleListCell.swift */; };
-		9F1113512539164300858CDB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1113502539164300858CDB /* CustomTableViewCell.swift */; };
 		9F92F720253B2E2D00B16985 /* MKCoordinateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92F71F253B2E2D00B16985 /* MKCoordinateExtension.swift */; };
 		9FDCA8F4253A42F200007CD6 /* VehiclePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCA8F3253A42F200007CD6 /* VehiclePin.swift */; };
 		9FDCA8F9253A44AF00007CD6 /* MKCenterLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCA8F8253A44AF00007CD6 /* MKCenterLocationExtension.swift */; };
@@ -71,7 +70,6 @@
 		9F11131925390F2000858CDB /* RxObservableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxObservableExtension.swift; sourceTree = "<group>"; };
 		9F111343253915E100858CDB /* VehicleListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleListCell.xib; sourceTree = "<group>"; };
 		9F11134B2539162300858CDB /* VehicleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListCell.swift; sourceTree = "<group>"; };
-		9F1113502539164300858CDB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9F92F71F253B2E2D00B16985 /* MKCoordinateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateExtension.swift; sourceTree = "<group>"; };
 		9FDCA8F3253A42F200007CD6 /* VehiclePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePin.swift; sourceTree = "<group>"; };
 		9FDCA8F8253A44AF00007CD6 /* MKCenterLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCenterLocationExtension.swift; sourceTree = "<group>"; };
@@ -279,7 +277,6 @@
 				9FF2D6CD2538FEB400714B59 /* BaseViewController.swift */,
 				9FF2D6D52538FFD400714B59 /* BaseViewPresenter.swift */,
 				9F111314253906D200858CDB /* BasePresenterView.swift */,
-				9F1113502539164300858CDB /* CustomTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -559,7 +556,6 @@
 				9FDCA8F4253A42F200007CD6 /* VehiclePin.swift in Sources */,
 				9FF2D6DF253902D900714B59 /* MapKitExampleAPI.swift in Sources */,
 				9FF2D6AF2538FAB400714B59 /* VehicleMapController.swift in Sources */,
-				9F1113512539164300858CDB /* CustomTableViewCell.swift in Sources */,
 				9FF2D6ED2539043900714B59 /* AFErrorConvertExtension.swift in Sources */,
 				9FF2D6F52539046F00714B59 /* APIError.swift in Sources */,
 				9F111315253906D200858CDB /* BasePresenterView.swift in Sources */,

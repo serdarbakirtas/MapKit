@@ -30,10 +30,6 @@ class VehicleListPresenterUnitTest: XCTestCase {
         super.tearDown()
     }
     
-    func testGettingTableDescription() {
-        XCTAssertEqual(presenter.getTableDescription().table, "Vehicle")
-    }
-    
     func testGettingVehicleListCount() {
         presenter.items.append(poiList1)
         presenter.items.append(poiList2)

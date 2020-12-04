@@ -57,12 +57,14 @@ class VehicleMapPresenterUnitTest: XCTestCase {
         presenter.initialLocation()
         
         XCTAssert(viewMock.isInitialLocationCalled)
+        XCTAssertEqual(presenter.view?.initialLocation.coordinate.latitude, 53.694865)
+        XCTAssertEqual(presenter.view?.initialLocation.coordinate.longitude, 9.757589)
     }
     
-    func testCoordinat() {
+    func testAddingCoordinate() {
         presenter.coordinateRegion()
         
-        XCTAssert(viewMock.isCoordinantRegionCalled)
+        XCTAssert(viewMock.isCoordinanteRegionCalled)
         XCTAssertEqual(viewMock.regionLatitude, 53.394655)
         XCTAssertEqual(viewMock.regionLongitude, 10.099891)
 

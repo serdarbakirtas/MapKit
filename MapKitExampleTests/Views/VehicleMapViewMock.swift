@@ -19,7 +19,7 @@ class VehicleMapViewMock: BaseViewMock, VehicleMapView {
     var isRemoveAnnotationsCalled = false
     var isAddAnnotationsCalled = false
     var isInitialLocationCalled = false
-    var isCoordinantRegionCalled = false
+    var isCoordinanteRegionCalled = false
     
     var initialLocation = CLLocation(latitude: 53.694865, longitude: 9.757589)
     var annotation = [MKAnnotation]()
@@ -32,7 +32,7 @@ class VehicleMapViewMock: BaseViewMock, VehicleMapView {
     func setCoordinateRegion(coordinateRegion: MKCoordinateRegion) {
         regionLatitude = coordinateRegion.center.latitude
         regionLongitude = coordinateRegion.center.longitude
-        isCoordinantRegionCalled = true
+        isCoordinanteRegionCalled = true
     }
     
     func initialLocation(initialLocation: CLLocation) {

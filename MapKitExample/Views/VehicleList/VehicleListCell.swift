@@ -6,16 +6,12 @@
 
 import UIKit
 
-class VehicleListCell: CustomTableViewCell {
+class VehicleListCell: UITableViewCell {
     
     @IBOutlet var labelLatitude: UILabel!
     @IBOutlet var labelLongitude: UILabel!
     @IBOutlet var labelState: UILabel!
     @IBOutlet var labelType: UILabel!
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-    }
     
     func populateCell(with vehicleViewModel: VehicleListViewModel) {
         labelType.text = vehicleViewModel.type
